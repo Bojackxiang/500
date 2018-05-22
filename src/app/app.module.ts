@@ -8,8 +8,9 @@ import { FooterComponent } from './element/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SlideShowComponent } from './element/slide-show/slide-show.component';
 
-import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowModule } from 'ng-simple-slideshow';
 
+import { Database } from './database/database';
 
 const theRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -32,7 +33,7 @@ const theRoutes: Routes = [
     RouterModule.forRoot(theRoutes),
     SlideshowModule
   ],
-  providers: [],
+  providers: [Database],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

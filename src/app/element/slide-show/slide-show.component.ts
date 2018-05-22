@@ -8,24 +8,23 @@ import { Component, OnInit } from "@angular/core";
 export class SlideShowComponent implements OnInit {
   imageUrls = [
     {
-      url:
-        "../../../assets/banners/banner1.jpg",
-      caption: "The first slide",
-      href: "#config"
+      url:"../../../assets/banners/banner1.jpg",
+      caption: "say some thing",
+      href: "#"
     },
     {
-      url:
-      "../../../assets/banners/banner2.jpg",
+      url:"../../../assets/banners/banner2.jpg",
+      caption: "say some thing",
     },
     {
       url:
       "../../../assets/banners/banner3.jpg",
-      caption: "Apple TV",
-      href: "https://www.apple.com/"
+      caption: "say some thing",
+      href: "#"
     },
     
   ];
-  height: string = "400px";
+  height: string = "600px";
   minHeight: string;
   arrowSize: string = "30px";
   showArrows: boolean = true;
