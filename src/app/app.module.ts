@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './element/header/header.component';
 import { FooterComponent } from './element/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { SlideshowComponent } from './element/slideshow/slideshow.component';
 import { SlideShowComponent } from './element/slide-show/slide-show.component';
+
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 
 const theRoutes: Routes = [
@@ -21,13 +22,13 @@ const theRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    SlideshowComponent,
     SlideShowComponent,
     
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(theRoutes),
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

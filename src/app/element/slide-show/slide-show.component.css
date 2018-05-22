@@ -7,12 +7,12 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
 }
 
 .banner-buttons-group{
     text-align: center;
     background-color: black;
+    margin-top:-5px;
 }
 
 .banner-buttons-group > ul {
