@@ -11,6 +11,7 @@ import { SlideShowComponent } from './element/slide-show/slide-show.component';
 import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { Database } from './database/database';
+import { NoticeComponent } from './element/notice/notice.component';
 
 const theRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -26,6 +27,7 @@ const theRoutes: Routes = [
     FooterComponent,
     HomeComponent,
     SlideShowComponent,
+    NoticeComponent,
     
   ],
   imports: [
