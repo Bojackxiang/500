@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes} from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './element/header/header.component';
@@ -12,11 +12,17 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { Database } from './database/database';
 import { NoticeComponent } from './element/notice/notice.component';
+import { ItemDetailComponent } from './pages/item-detail/item-detail.component';
+import { ItemListComponent } from './pages/item-list/item-list.component';
 
 const theRoutes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path:'home', component: HomeComponent},
-  
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  {
+    path: 'itemlist', component: ItemListComponent, children: [
+      { path: ':id', component: ItemDetailComponent }
+    ]
+  }
 ];
 
 
@@ -28,7 +34,9 @@ const theRoutes: Routes = [
     HomeComponent,
     SlideShowComponent,
     NoticeComponent,
-    
+    ItemDetailComponent,
+    ItemListComponent,
+
   ],
   imports: [
     BrowserModule,
