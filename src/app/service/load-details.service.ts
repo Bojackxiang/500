@@ -8,8 +8,10 @@ export class LoadDetailsService {
 
 
   getItemDetail(id: number){
-    console.log(this.dataBase.flowerData);
-    return {name: "test"}
-    
+    for(let item of this.dataBase.flowerData){
+      if (item.id == id){
+        return item
+      }
+    }
   }
 }

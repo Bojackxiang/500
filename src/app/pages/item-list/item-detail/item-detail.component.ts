@@ -16,15 +16,14 @@ export class ItemDetailComponent implements OnInit {
 
   ngOnInit() {
     this.activateRouter.params
-      .subscribe(
+      .subscribe( // 动态获取url里面的id信息
         (params: Params) =>{
           this.id = Number(params['id'])
           this.item = this.getItemService.getItemDetail(this.id);
-          console.log(this.id);
         }
       );
     
-      console.log(this.id);
+      console.log(this.item)
 
   }
 
