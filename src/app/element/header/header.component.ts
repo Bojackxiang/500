@@ -35,6 +35,6 @@ export class HeaderComponent implements OnInit {
 
   signInRequest(){
     alert("right?")
-    // TODO: ADD REQUEST TO DATA BASE
+    // TODO: ADD REQUEST TO DATA BASEZ
   }
 }

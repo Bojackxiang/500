@@ -12,19 +12,19 @@ import { SlideshowModule } from 'ng-simple-slideshow';
 
 import { Database } from './database/database';
 import { NoticeComponent } from './element/notice/notice.component';
-import { ItemDetailComponent } from './pages/item-detail/item-detail.component';
+import { ItemDetailComponent } from './pages/item-list/item-detail/item-detail.component';
 import { ItemListComponent } from './pages/item-list/item-list.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoadDetailsService } from './service/load-details.service';
 
 const theRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  {
-    path: 'itemlist', component: ItemListComponent, children: [
-      { path: ':id', component: ItemDetailComponent }
-    ]
-  }
+  { path: 'itemlist', component:ItemListComponent},
+  { path: 'itemlist/item/:id', component: ItemDetailComponent },
+  
+
 ];
 
 
@@ -46,7 +46,7 @@ const theRoutes: Routes = [
     SlideshowModule,
     BrowserAnimationsModule
   ],
-  providers: [Database],
+  providers: [Database, LoadDetailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
