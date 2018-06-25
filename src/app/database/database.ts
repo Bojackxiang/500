@@ -1,6 +1,12 @@
 import {environment} from '../../environments/environment'
 
 export class Database{
+    userData = [
+        {name: 'admin', password: '12345'},
+        {name: 'weijie', password: '123456'},
+        {name: 'dandan', password: '1234567'}
+    ]
+
     flowerData = [
         {
             id:1,

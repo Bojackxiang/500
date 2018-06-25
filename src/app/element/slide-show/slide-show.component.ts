@@ -8,17 +8,17 @@ import { Component, OnInit } from "@angular/core";
 export class SlideShowComponent implements OnInit {
   imageUrls = [
     {
-      url:"../../../assets/banners/banner1.jpg",
+      url:"https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200",
       caption: "say some thing",
       href: "#"
     },
     {
-      url:"../../../assets/banners/banner2.jpg",
+      url:"https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200",
       caption: "say some thing",
     },
     {
       url:
-      "../../../assets/banners/banner3.jpg",
+      "https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200",
       caption: "say some thing",
       href: "#"
     },

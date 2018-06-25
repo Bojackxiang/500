@@ -14,10 +14,10 @@ export class NoticeComponent implements OnInit {
 
   }
 
-  public display = 'block';
+  // public display = 'block';
+  display = 'none';
 
   onClick(){
-    alert("clicked");
     this.display = 'none';
   }
 

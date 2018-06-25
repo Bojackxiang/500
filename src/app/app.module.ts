@@ -15,6 +15,8 @@ import { NoticeComponent } from './element/notice/notice.component';
 import { ItemDetailComponent } from './pages/item-detail/item-detail.component';
 import { ItemListComponent } from './pages/item-list/item-list.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 const theRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -41,7 +43,8 @@ const theRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(theRoutes),
-    SlideshowModule
+    SlideshowModule,
+    BrowserAnimationsModule
   ],
   providers: [Database],
   bootstrap: [AppComponent]

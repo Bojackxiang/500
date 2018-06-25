@@ -98,6 +98,23 @@ p {
 		font-weight: 300;
 }
 
+.signinForm{
+	width: 275px;
+	position: absolute;
+	background-color: white;
+	z-index: 1000;
+	padding: 20px;
+	right: 0;
+	margin-top: 10px;
+}
+
+.form-submit{
+	padding: 5px;
+	margin-top: 10px;
+}
+
+
+
 @media (max-width:600px) {
 		header > nav > div > div > a {
 				margin: 5px 0;
@@ -107,3 +124,4 @@ p {
 				display: none;
 		}
 }
+
