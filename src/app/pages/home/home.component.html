@@ -6,7 +6,7 @@
 </div>
 <div class="show-row">
   <div class="row-item" *ngFor="let item of showRowInfo">
-    <a class="itemlink" href="/itemlist/item/{{item['id']}}">
+    <a class="itemlink" routerLink="/itemlist/item/{{item['id']}}">
       <img class="row-show-img" src="{{item['image']}}" alt="">
       <p class="row-item-description"> flower name and price</p>
       <p class="row-item-price"> $ {{item['price']}}</p>
@@ -19,7 +19,7 @@
   </div>
   <div class="show-row">
     <div class="row-item" *ngFor="let item of showRowInfo">
-      <a class="itemlink" href="/itemlist/item/{{item['id']}}">
+      <a class="itemlink" routerLink="/itemlist/item/{{item['id']}}">
         <img class="row-show-img" src="{{item['image']}}" alt="">
         <p class="row-item-description"> flower name and price</p>
         <p class="row-item-price"> $ {{item['price']}}</p>

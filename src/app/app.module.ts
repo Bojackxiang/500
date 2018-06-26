@@ -18,12 +18,13 @@ import { ItemListComponent } from './pages/item-list/item-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoadDetailsService } from './service/load-details.service';
 
+import { LocationStrategy,
+  HashLocationStrategy } from '@angular/common';
+
 const theRoutes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'itemlist', component:ItemListComponent},
   { path: 'itemlist/item/:id', component: ItemDetailComponent },
-  
 
 ];
 
@@ -42,7 +43,7 @@ const theRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(theRoutes),
+    RouterModule.forRoot(theRoutes, {useHash: true}),
     SlideshowModule,
     BrowserAnimationsModule
   ],
