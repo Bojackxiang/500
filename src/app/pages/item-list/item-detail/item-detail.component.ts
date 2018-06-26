@@ -22,9 +22,6 @@ export class ItemDetailComponent implements OnInit {
           this.item = this.getItemService.getItemDetail(this.id);
         }
       );
-    
-      console.log(this.item)
-
   }
 
 }

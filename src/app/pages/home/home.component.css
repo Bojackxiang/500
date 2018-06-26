@@ -10,6 +10,8 @@
     font-weight: bold;
     color: #AB66AF;
     font-family: 'Yatra One', cursive;
+    margin-top: 30px;
+    background-color: pink;
 }
 
 .show-row{
@@ -40,6 +42,10 @@
     font-size: 14px;
     font-family: 'Pacifico', cursive;
     margin: 0;
+}
+
+.itemlink{
+    text-decoration: none;
 }
 
 

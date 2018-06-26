@@ -1,16 +1,31 @@
-<!-- <div>
+<div>
   <app-slide-show></app-slide-show>
-</div> -->
+</div>
 <div class="sub-title">
   <p> Shop Birthday Best Sellers </p>
 </div>
 <div class="show-row">
   <div class="row-item" *ngFor="let item of showRowInfo">
-    <img class="row-show-img" src="{{item['image']}}" alt="">
-    <p class="row-item-description"> flower name and price</p>
-    <p class="row-item-price"> $ {{item['price']}}</p>
+    <a class="itemlink" href="/itemlist/item/{{item['id']}}">
+      <img class="row-show-img" src="{{item['image']}}" alt="">
+      <p class="row-item-description"> flower name and price</p>
+      <p class="row-item-price"> $ {{item['price']}}</p>
+    </a>
   </div>
 </div>
+
+<div class="sub-title">
+    <p> Shop Birthday Best Sellers </p>
+  </div>
+  <div class="show-row">
+    <div class="row-item" *ngFor="let item of showRowInfo">
+      <a class="itemlink" href="/itemlist/item/{{item['id']}}">
+        <img class="row-show-img" src="{{item['image']}}" alt="">
+        <p class="row-item-description"> flower name and price</p>
+        <p class="row-item-price"> $ {{item['price']}}</p>
+      </a>
+    </div>
+  </div>
 
 
 <!--for additional functions-->

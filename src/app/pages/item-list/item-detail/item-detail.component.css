@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Spirax');
+
+.item-container{
+    margin-top: 20px;
+}
+
+.image-container{
+    padding: 20px;
+    background-color: #f2eded;
+}
+
+.image-container > img{
+    width: 100%;
+}
+
+.item-title{
+    font-family: 'Spirax', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.item-price{
+    text-align: center;
+}
+
+.cart-and-price{
+    font-family: 'Spirax', cursive;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.add-cart-button{
+    background-color:#83B06A;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+
+.add-cart-button:hover{
+    background-color: #a5ce84;
+}
+
+.item-description{
+    width: 450px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 30px auto;
+}

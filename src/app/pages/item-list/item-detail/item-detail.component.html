@@ -1,3 +1,32 @@
-<p>
-  item-detail works!
-</p>
+<div class="item-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 item-pic">
+                <div class="image-container">
+                    <img
+                        src="{{item['image']}}"
+                        alt
+                    >
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p class="item-title">{{item["title"]}}</p>
+                <p class="item-description">{{item["description"]}}</p>
+                <div class="row cart-and-price">
+                    <div class="col-sm-6">
+                        <p class="item-price">Price: $ {{item["price"]}}</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <a
+                            href
+                            class="add-cart-button"
+                        >
+                            Add To Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
